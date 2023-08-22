@@ -6,9 +6,7 @@ int main() {
 
     char currLine[101];
     while(fgets(currLine, 100, inputFile) != NULL){
-        int strLength = strlen(currLine);
-        fprintf(outputFile, "%d\n", strLength);
-        fprintf(outputFile, "%s", currLine);
+        fprintf(outputFile, "%d\n%s", strlen(currLine), currLine);
     }
     fclose(inputFile);
     fclose(outputFile);
