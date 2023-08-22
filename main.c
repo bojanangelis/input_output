@@ -8,7 +8,7 @@ int main() {
     while(fgets(currLine, 100, inputFile) != NULL){
         int strLength = strlen(currLine);
         fprintf(outputFile, "%d\n", strLength);
-        fprintf(outputFile, "%s\n", currLine);
+        fprintf(outputFile, "%s", currLine);
     }
     fclose(inputFile);
     fclose(outputFile);
